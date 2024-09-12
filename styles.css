@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+
+/* add custom font */
+@font-face {
+    font-family: 'Norse-Bold'; 
+    src: url('./fonts/Norse-Bold.otf') format('opentype'); 
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.logo-container {
+    background-image: url('./images/plants.jpg');
+    background-size: cover;
+    width: 25rem;
+    height: 100vh; 
+    max-width: 100vw; 
+    max-height: 100vh; 
+    
+}
+.logo-container{
+    padding-top: 15%;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    background-color: rgba(0, 0, 0, 0.2); /* Black with 50% opacity */
+    border: 2px solid black;
+    height: 6rem;
+}
+
+.logo p{
+    font-size: 4rem;
+    font-family: Norse-Bold , sans-serif;
+}
+
+.logo img{
+    height: 6em;
+    width: 4em;
+}
