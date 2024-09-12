@@ -47,3 +47,24 @@ body {
     height: 6em;
     width: 4em;
 }
+
+
+
+.name, .contact-details, .ps{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+
+
+.first-name, .last-name, .mail, .number, .pass, .c-ps{
+    display: flex;
+    flex-direction: column;
+   margin-left: 2rem;
+   margin-right: 1rem;
+   margin-bottom: 1rem;
+   
+    
+}
+
