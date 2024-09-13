@@ -61,6 +61,8 @@ body {
 }
  .form-container p, h3{
     margin-left: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
  }
 
  .blurb{
@@ -83,9 +85,12 @@ body {
     flex-direction: column;
    margin-left: 2rem;
    margin-right: 1rem;
-   margin-bottom: 1rem;
-   
-    
+   margin-bottom: 1rem; 
+}
+
+label{
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .header, .footer{
@@ -101,8 +106,38 @@ body {
     border-radius: 5px;
     height: 30px;
     width: 130px;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-left: 2rem;
     background-color: #596D48;
     color: white;
+    font-weight: bold;
+    padding: 3px;
+    font-size: small;
 }
+
+.footer p{
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1rem;
+}
+
+.footer a{
+    color: #3b5525;
+}
+
+input{
+    /*Gets rid of browser preset - allows border colour*/
+    outline: NONE;
+}
+input:focus{
+    border: 1px solid rgb(31, 104, 214);
+}
+input:focus:invalid {
+    border-color: red;
+  }
+
+  /*Using JavaScript to validate forms is covered in a future lesson. 
+  For now, just validate each field separately.*/
+  input[type='password']:invalid {
+    border-color: red;
+  }
